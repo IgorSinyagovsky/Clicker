@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity3">
+
+
+
+    <Button
+        android:id="@+id/sbros"
+        android:layout_width="131dp"
+        android:layout_height="89dp"
+        android:text="Reset"
+        android:textSize="30sp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="73dp"
+        android:layout_height="21dp"
+        android:text="> 1000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/sbros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/bomg"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:text=""
+        android:textColor="#ff033e"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896"
+        tools:visibility="visible" />
+
+    <Switch
+        android:id="@+id/yazik"
+        android:checked="false"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="183dp"
+        android:textSize="25dp"
+        android:text="Language: English"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbros" />
+
+    <Switch
+        android:id="@+id/mzk"
+        android:layout_width="195dp"
+        android:layout_height="42dp"
+        android:text="Music: Off"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bomg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+
+</android.support.constraint.ConstraintLayout>
